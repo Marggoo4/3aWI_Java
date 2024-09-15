@@ -8,7 +8,7 @@ import java.util.Random;
 
 
 
-public class IfStatement {
+public class IFStatement_1 {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
