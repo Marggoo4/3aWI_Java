@@ -6,25 +6,32 @@ import java.util.Random;
 public class IFStatement_2 {
     public static void main(String[] args) {
 
-        // Erstelle eine Zufallszahl zwischen 0 und 100
+        // Erstelle zwei Zufallszahl zwischen 0 und 100
         Random random = new Random();
-        int randomNumber = random.nextInt(100);
+        int randomNumber1 = random.nextInt(100);
 
-        // Gib die Zufallszahl aus
-        System.out.println(randomNumber);
+        int randomNumber2 = random.nextInt(100);
 
 
-        // Wenn die Zahl kleiner ist als 20  gib aus "Mini"
-        if (randomNumber < 20) {
-            System.out.println("Size: Mini");
+        System.out.println(randomNumber1);
+        System.out.println(randomNumber2);
+
+
+        // Wenn die erste Zahl kleiner ist als die zweite UND die erste Zahl kleiner ist als 50
+        // dann gib aus "Zahl 1 ist kleiner als Zahl 2 und Mini"
+        if (randomNumber1 < randomNumber2 && randomNumber1 < 50) {
+            System.out.println("Zahl 1 ist kleiner als Zahl 2 und Mini");
+
         }
-        // Wenn die Zahl zw. 20 und 50 ist gib aus "Medium"
-        else if (randomNumber > 20 && randomNumber < 50) {
-            System.out.println("Size: Medium");
+        // Wenn die erste Zahl kleiner ist als 30 oder die zweite Zahl kleiner ist als 30
+        // dann gib aus "Eine der beiden ist kleiner als 30"
+        if (randomNumber1 < 30 || randomNumber2 < 30) {
+            System.out.println("Eine der beiden ist kleiner als 30");
         }
-        // Wenn die Zahl größer als 50 ist gib aus "Large"
-        else if (randomNumber > 50) {
-            System.out.println("Size: Large");
+        // Wenn die erste Zahl kleiner ist als 50 UND die zweite Zahl ungleich 50 ist
+        // dann gib aus "Erste Zahl klein, zweite kein 50iger"
+        if (randomNumber1 < 50 && randomNumber2 != 50) {
+            System.out.println("Erste Zahl klein, zweite kein 50iger");
         }
     }
 }
