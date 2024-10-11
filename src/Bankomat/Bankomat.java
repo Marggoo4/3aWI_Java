@@ -11,7 +11,6 @@ public class Bankomat {
         start();
     }
 
-
     // Startet den Bankomaten-Prozess
     public static void start() {
         boolean running = true;
@@ -54,14 +53,12 @@ public class Bankomat {
                     running = false;
                     break;
                 default:
-                    System.out.println("Ungültige Auswahl. Bitte wähle eine Option zwischen 1-4");
+                    System.out.println("Ungültige Auswahl. Bitte wähle eine Option zwischen 1 und 4.");
                     break;
-
             }
         }
     }
 }
-
 
      /*   Diese Aufgabe setzt sich aus allen gelernten Inhalten zusammen!
                 Erstelle ein Programm, das einen Bankomaten simuliert. Folgende Möglichkeiten gibt es:
