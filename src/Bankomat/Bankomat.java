@@ -55,6 +55,7 @@ public class Bankomat {
                     break;
                 default:
                     System.out.println("Ungültige Auswahl. Bitte wähle eine Option zwischen 1-4");
+                    break;
 
             }
         }
