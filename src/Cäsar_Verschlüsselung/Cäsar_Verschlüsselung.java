@@ -27,7 +27,7 @@ public class Cäsar_Verschlüsselung {
 
 
     public static String decrypt(String data) {
-        return result.toString();
+
     }
 
 }
