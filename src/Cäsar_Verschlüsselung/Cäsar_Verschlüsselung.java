@@ -14,14 +14,15 @@ public class Cäsar_Verschlüsselung {
     public static String encrypt(String data) {
         StringBuilder result = new StringBuilder();
 
+        String result = "";
+        for (char c : s.toCharArray()) {
+            if (c >= 'a' && c <= 'z') {
 
-        for (int i = 0; i < data.length(); i++) {
-            char c = data.charAt(i);
-
-
-
+            } else {
+                result += c;
+            }
         }
-        return result.toString();
+        return result;
     }
 
 
@@ -30,3 +31,12 @@ public class Cäsar_Verschlüsselung {
     }
 
 }
+
+// Bei der Cäsar-Verschlüsselung werden die Buchstaben um eine fixe Anzahl Stellen verschoben (z.B. 2) a wird zu c, f wird zu h, z wird zu b usw.
+// Implementiere eine Methode encrypt(String):String und eine Methode decrypt(String):String
+
+
+
+
+
+
