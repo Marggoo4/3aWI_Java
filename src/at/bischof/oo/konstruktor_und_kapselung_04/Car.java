@@ -11,16 +11,16 @@
 // Diese wird berechnet über den Tankstand und den Verbrauch.
 
 
-package OO.Erweitere_das_Auto_03;
+package at.bischof.oo.konstruktor_und_kapselung_04;
 
-public class Car {
+public class Car  {
 
     private double tankCapacity;
     private double fuelLevel;
     private double fuelConsumption;
 
 
-    public Car(double tankCapacity, double fuelLevel, double fuelConsumption) {
+    public Car (double tankCapacity, double fuelLevel, double fuelConsumption) {
         this.tankCapacity = tankCapacity;
         this.fuelLevel = fuelLevel;
         this.fuelConsumption = fuelConsumption;
